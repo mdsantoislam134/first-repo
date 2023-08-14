@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DREM LAND</title>
+<!--bootstrap cdn-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+<!--css cdn-->
+<link rel="stylesheet" type="text/css" href="main.css"/>
+<!--font-awesome cdn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <i class="fas fa-bars fa-2x" id="bars"></i>
+<!--nav start hear-->
+    <nav id="all-nav" class="hiden">
+        <ul class="uper__nav flex-around">
+            <li class="nav_list">
+                <a href="/" class="nav_link">Home</a>
+                </li>
+            <li class="nav_list">
+                <a href="/login" class="nav_link">Login</a>
+            </li>
+            <li class="nav_list">
+                <a href="/register" class="nav_link">Register</a>
+            </li>
+            <li class="nav_list">
+                <a href="/contrac" class="nav_link">Contrac</a>
+            </li>
+            <li class="nav_list">
+                <a href="/profile" class="nav_link"><img class="profile" src="Imagess/image.jpg" alt="" srcset=""></a>
+            </li>
+        </ul>
+        <ul class="lower_nav flex-around">
+            <li class="nav_list">
+                <a href="/" class="nav_link nav_brand">DRIM LAND</a>
+            </li>
+            <li class="nav_list">
+                <a href="/cart" class="nav_link"> <i class="fa-sharp fa-solid fa-cart-shopping"></i> Cart 2 product price 46$</a>
+            </li>
+        </ul>
+
+    </nav>
+<!--nav end--> 
+<header class="header mb-3">
+ <div class="banner">
+    <marquee class="header-titel">
+        Welcome to our shope
+     </marquee>
+
+     <div class="features flex-around">
+        <article class="feature">
+            <i class="fa-solid fa-truck fa-2x"></i>
+            <h3>Shipting in 5 Day</h3>
+        </article>
+        <article class="feature">
+            <i class="fa-brands fa-rocketchat fa-2x"></i>
+            <h3>Support 24/24</h3>
+        </article>
+        <article class="feature">
+            <i class="fa-regular fa-credit-card fa-2x"></i>
+            <h3>Paid and save money</h3>
+        </article>
+     </div>
+  </div>
+</header>
+<!--header end hear-->
+<!--main start hear-->
+<main class="main row">
+  <div class="cetagoris col-lg-3 col-md- col-sm-12">
+ <section class="section ">
+    <h3 for="categori" class="section-titel text-left">Categori</h3>
+    <ul class="categori-ul">
+        <li><label for="categori"><input type="checkbox" name="categori" value="phone"> Phone </label></li>
+        <li><label for="categori"><input type="checkbox" name="categori" value="telephone"> Telephone </label></li>
+        <li><label for="categori"><input type="checkbox" name="categori" value="tebel"> Tabel </label></li>
+        <li><label for="categori"><input type="checkbox" name="categori" value="headphone"> Headphone</label></li>
+        <li><label for="categori"><input type="checkbox" name="categori" value="phone"> Phone </label></li>
+    </ul>
+ </section>
+ <section class="section ">
+    <h3 class="section-titel text-left">Price Range</h3>
+    <ul class="categori-ul">
+        <li><label for=""><input type="radio" name="price" value="1$-20$"> 1$-20$ </label></li>
+        <li><label for=""><input type="radio" name="price" value="20$-50$">20$-50$</label></li>
+        <li><label for=""><input type="radio" name="price" value="50$-100$">50$-100$ </label></li>
+        <li><label for=""><input type="radio" name="price" value="100$-500$">100$-500$</label></li>
+        <li><label for=""><input type="radio" name="price" value="500$-1000$++">500$-1000$++ </label></li>
+    </ul>
+ </section>
+ 
+ <section  class="section">
+    <h3 for="paid" class="section-titel text-left pl-1">Shoping Type</h3>
+    <ul class="categori-ul">
+        <li><label for="paid"><input type="radio" name="paib" value="free">free Shoping</label></li>
+        <li><label for="paid"><input type="radio" name="paid" value="paide">Paide Shoping</label></li>
+    
+    </ul>
+ </section>
+
+</div>
+<!-- product section is start -->
+  <div width="100%" height="100%" class="products  d-flex col-lg-9 col-sm-12 row">
+    <div class="select-bar text-center col-lg-6 mb-2 col-sm-12  ">
+       <section>
+       <div class="">
+        <label for="short"> See product :</label>
+        <select name="short">
+            <option for="price">MOST SELS PRODUCT</option>
+            <option for="Dress">Dress</option>
+            <option for="Shorts">Shorts</option>
+            <option for="t-shirt">T-shirts</option>
+        </select>
+
+       </div>
+       </section>
+       </div>
+
+       <div class="src-bar col-lg-6 mb-2 col-sm-12 ">
+      <label><input type="text" class="src-input" placeholder="Search your product" > <button id="src-btn"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button></label>  
+        
+       </div>
+
+
+<!--product start hear -->
+     <div class="products col-12 text-center row">
+
+
+        <div class="col-lg-3 col-md-6 col-sm-12 product card">
+           <div class="sold-text text-center">
+            <span>10 in Stcok</span> <hr class="hr-style">
+            <span>7 Sold</span>
+           
+           </div>
+           <img class="product-img" src="Imagess/product.jpg">
+           <h4 class="product-name ">M90 pro headphone</h4>
+           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit..<a href="cart.html" >Learm more</a></span>
+            <h6>Rating: 4.5/5</h6>
+            <h4 class="product-pice">$23.32</h4>
+            <button class="product-btn" type="button">Add to Cart</button>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 product card">
+            <div class="sold-text text-center">
+             <span>13 in Stcok</span> <hr class="hr-style">
+             <span>9 Sold</span>
+            
+            </div>
+            <img class="product-img" src="Imagess/product1.jpg">
+            <h4 class="product-name ">Hp laptop</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit..<a href="cart.html" >Learm more</a></span>
+             <h6>Reting: 4.6/5</h6>
+             <h4 class="product-pice">$243.42</h4>
+             <button class="product-btn " type="button">Add to Cart</button>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 product card">
+                <div class="sold-text text-center">
+                 <span>13 in Stcok</span> <hr class="hr-style">
+                 <span>5 Sold</span>
+                </div>
+                <img class="product-img" src="Imagess/product2.jpg">
+                <h4 class="product-name ">Dell Lap-Top</h4>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit..<a href="cart.html" >Learm more</a></span>
+                 <h6>Reting: 4.9/5</h6>
+                 <h4 class="product-pice">$233.72</h4>
+                 <button class="product-btn " type="button">Add to Cart</button>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 product card">
+                    <div class="sold-text text-center">
+                     <span>20 in Stcok</span> <hr class="hr-style">
+                     <span>8 Sold</span>
+                    </div>
+                    <img class="product-img" src="Imagess/product3.jpg">
+                    <h4 class="product-name ">Smart TV</h4>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit..<a href="cart.html" >Learm more</a></span>
+                     <h6>Reting: 4.3/5</h6>
+                     <h4 class="product-pice">$133.52</h4>
+                     <button class="product-btn " type="button">Add to Cart</button>
+        </div>
+ 
+                    
+        <div class="col-lg-3 col-md-6 col-sm-12 product card">
+                        <div class="sold-text text-center">
+                         <span>30 in Stcok</span> <hr class="hr-style">
+                         <span>15 Sold</span>
+                        </div>
+                        <img class="product-img" src="Imagess/product.jpg">
+                        <h4 class="product-name ">M90 pro headphone</h4>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit..<a href="cart.html" >Learm more</a></span>
+                         <h6>Reting: 4.5/5</h6>
+                         <h4 class="product-pice">$23.32</h4>
+                         <button class="product-btn " type="button">Add to Cart</button>
+        </div>
+ 
+                        
+        <div class="col-lg-3 col-md-6 col-sm-12 product card">
+                           <div class="sold-text text-center">
+                                <span>10 in Stcok</span> <hr class="hr-style">
+                                <span>7 Sold</span>
+                            </div>
+                                 <img class="product-img" src="Imagess/product.jpg">
+                                 <h4 class="product-name ">M90 pro headphone</h4>
+                                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit..<a href="product.html" >Learm more</a></span>
+                                 <h6>Reting : 4.5/5</h6>
+                                 <h4 class="product-pice">$23.32</h4>
+                                 <button class="product-btn " type="button">Add to Cart</button>
+        </div>
+ 
+    
+     </div>
+
+  </div>
+    
+  <div class="peginetion-div text-center p-2">
+    <button class="p-btn"> < </button>
+    <button class="p-btn"> 2 </button>
+    <button class="p-btn"> 3 </button>
+    <button class="p-btn"> 4 </button>
+    <button class="p-btn"> 5 </button>
+    <button class="p-btn"> 6 </button>
+    <button class="p-btn"> 7 </button>
+    <button class="p-btn"> 8 </button>
+    <button class="p-btn"> 9 </button>
+    <button class="p-btn"> 9 </button>
+    <button class="p-btn"> 10 </button>
+    <button class="p-btn"> ... </button>
+    <button class="p-btn"> 20 </button>
+    <button class="p-btn"> > </button>
+  </div>
+</main>
+<!--main end hear-->
+
+
+
+<!--footer start hear-->
+<foem class="flex-around ">
+    <footer class="footer text-center row ">
+    
+        <div class="footer-div col-lg-6  col-sm-12">
+            <label class="foot-label">SUBSCRIB TO YOUR EMAIL :    <input type=email placeholder="Enter Your Email" /><button type="submit" class=" sub-btn">SUBSCRIB</button></label>
+        </div>
+        <div  class="footer-div2 col-lg-6  col-sm-12"> <p>&copy;copyright 2025 DREM LAND</p></div>
+    </footer>
+</foem> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script/main.js"></script>
+</body>
+</html>

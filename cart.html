@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DREM LAND</title>
+<!--bootstrap cdn-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!--css cdn-->
+<link rel="stylesheet" type="text/css" href="main.css"/>
+<!--font-awesome cdn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <i class="fas fa-bars fa-2x " id="bars"></i>
+<!--nav start hear-->
+    <nav id="all-nav" class="hiden">
+        <ul class="uper__nav flex-around">
+            <li class="nav_list">
+                <a href="main.html" class="nav_link">Home</a>
+                </li>
+            <li class="nav_list">
+                <a href="login.html" class="nav_link">Login</a>
+            </li>
+            <li class="nav_list">
+                <a href="register.html" class="nav_link">Register</a>
+            </li>
+            <li class="nav_list">
+                <a href="contrac.html" class="nav_link">Contrac</a>
+            </li>
+            <li class="nav_list">
+                <a href="profile.html" class="nav_link"><img class="profile" src="Imagess/image.jpg" alt="" srcset=""></a>
+            </li>
+        </ul>
+        <ul class="lower_nav flex-around">
+            <li class="nav_list">
+                <a href="main.html" class="nav_link nav_brand">DRIM LAND</a>
+            </li>
+            <li class="nav_list">
+                <a href="cart.html" class="nav_link"> <i class="fa-sharp fa-solid fa-cart-shopping"></i> Cart 2 product price 46$</a>
+            </li>
+        </ul>
+
+    </nav>
+<!--nav end-->
+<main class="cart-main mt-3 row">
+
+    <div class="product-said col-lg-6 col-sm-12">
+
+      
+        <div class="pro-saied-first ">
+        <div class="cart-head">
+            <h3>Shoping Cart [ 2 product ]</h3>
+        </div>
+        <div class="cart-oftion">
+          <label for="cart-select"> Select All  <input type="checkbox" name="select" id="cart-select"></Select></label> 
+           <button class="cart-icon card"> <i class="fa-solid fa-trash-alt"></i> </button>
+         <a class="shoping-more" href="product.html" >Shoping-More</a>
+        </div>
+      </div>
+       <!--section div-->
+       <div class="m-2 cart-pro-sec row">
+         
+         <div class="col-1 del-select"><input type="checkbox" name="" id=""></div>
+         <div class="col-6 cart-pro-img"><img src="Imagess/product.jpg" alt=""></div>
+         <div class="col-3 cart-diteils">
+            <h5>Price:$22.54</h5>
+            <h6>Reting:4.7/5</h6>
+            <span>Deteils: Lorem ipsum dolor sit amet consectetur adipisicing.<a href="product.html">Learn More</a></span>
+           
+        </div>
+         <div class="col-2 haw-meny-pro">
+            <div class="cart-delet-btn">
+                <button><i class="fa fa-trash-alt"></i></button>
+            </div>
+            <div class="pro-count-btn d-flex">
+                <button class=" text-center card cart-pro-plus" onclick="addpro()"><i class="fa fa-plus"></i></button><span class="pro-count">1</span>
+                <button class=" text-center  card cart-pro-minus" onclick="minus()"><i class="fa-solid fa-minus"></i></button>
+            </div>
+         </div>
+
+
+       </div>
+
+       <!-- third product -->
+
+       <div class="m-2 cart-pro-sec row">
+         
+        <div class="col-1 del-select"><input type="checkbox" name="" id=""></div>
+        <div class="col-6 cart-pro-img"><img src="Imagess/product1.jpg" alt=""></div>
+        <div class="col-3 cart-diteils">
+           <h5>Price:$30.87 </h5>
+           <h6> Rating: 4.2/5</h6>
+           <span>Deteils: Lorem ipsum dolor sit amet consectetur adipisicing.<a href="product.html">Learn More</a></span>
+          
+       </div>
+        <div class="col-2 haw-meny-pro">
+           <div class="cart-delet-btn">
+               <button><i class="fa fa-trash-alt"></i></button>
+           </div>
+           <div class="pro-count-btn d-flex">
+               <button class=" text-center card cart-pro-plus" onclick="addpro()"><i class="fa fa-plus"></i></button><span class="pro-count">1</span>
+               <button class=" text-center  card cart-pro-minus"onclick="minus()"><i class="fa-solid fa-minus"></i></button>
+           </div>
+        </div>
+
+
+      </div>
+      
+      <!-- four nom div -->
+
+      <div class="m-2 cart-pro-sec row">
+         
+        <div class="col-1 del-select"><input type="checkbox" name="" id=""></div>
+        <div class="col-6 cart-pro-img"><img src="Imagess/product2.jpg" alt=""></div>
+        <div class="col-3 cart-diteils">
+           <h5>Price:$40.67 </h5>
+           <h6> Rating: 4.4/5</h6>
+           <span>Deteils: Lorem ipsum dolor sit amet consectetur adipisicing.<a href="product.html">Learn More</a></span>
+          
+       </div>
+        <div class="col-2 haw-meny-pro">
+           <div class="cart-delet-btn">
+               <button><i class="fa fa-trash-alt"></i></button>
+           </div>
+           <div class="pro-count-btn d-flex">
+                <button class=" text-center card cart-pro-plus" onclick="addpro()"><i class="fa fa-plus"></i></button>
+                <span class="pro-count">2</span>
+                <button class=" text-center  card cart-pro-minus" onclick="minus()"><i class="fa-solid fa-minus"></i></button>
+           </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+    <!---payment section -->
+
+    <div class="payment-saied col-lg-6 col-sm-12">
+
+     
+      <div class="payment-summary ">
+        <h3> Payment Summary</h3>
+        <div class="price-rel"><span class="pay-coa">Subtotal:</span><span class="pay-tk">$440.20</span></div>  
+        <div class="price-rel"><span class="pay-coa">Shoping Cost:</span><span class="pay-tk">$1</span></div> 
+        <div class="price-rel"><span class="pay-coa">All Total:</span><span class="pay-tk">$441.20</span></div>             
+       
+         <button class="pay-btn">Pay Naw</button>
+     </div>
+    
+
+    </div>
+
+</main>
+
+<!--footer start hear-->
+<foem class="flex-around ">
+    <footer class="footer text-center row ">
+    
+        <div class="footer-div col-lg-6  col-sm-12">
+            <label class="foot-label">SUBSCRIB TO YOUR EMAIL :    <input type=email placeholder="Enter Your Email" /><button type="submit" class=" sub-btn">SUBSCRIB</button></label>
+        </div>
+        <div  class="footer-div2 col-lg-6  col-sm-12"> <p>&copy;copyright 2025 DREM LAND</p></div>
+    </footer>
+</foem> 
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="script/main.js"></script>
+</body>
+</html>
